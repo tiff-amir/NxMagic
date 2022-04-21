@@ -1,0 +1,14 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.ContextMenu {
+  z-index: var(--z-context-menu);
+  position: absolute;
+  background: white;
+  box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%), 0 2px 15px 0 rgb(0 0 0 / 5%);
+  max-height: unit(75);
+  border-radius: unit(2);
+  width: unit(60);
+  @include overflow-h(hidden);
+  @include overflow-v();
+}

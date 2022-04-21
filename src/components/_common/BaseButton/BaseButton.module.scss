@@ -1,0 +1,16 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.BaseButton {
+  @include empty-button;
+  line-height: 0;
+  user-select: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.BaseButton--disabled {
+  cursor: default;
+  pointer-events: none;
+}

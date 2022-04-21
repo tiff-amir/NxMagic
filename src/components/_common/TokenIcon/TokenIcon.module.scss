@@ -1,0 +1,7 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.TokenIcon {
+  @include size(10);
+  @include icon-size(10, 10);
+}

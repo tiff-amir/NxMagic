@@ -1,0 +1,17 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.IconButton {
+  height: unit(10.5);
+  border-radius: unit(3);
+  border-width: unit(0.5);
+  border-style: solid;
+  box-sizing: border-box;
+  line-height: 0;
+  @include padding-v(1.75);
+  @include padding-h(3);
+}
+
+.icon {
+  @include icon-size(6, 6);
+}

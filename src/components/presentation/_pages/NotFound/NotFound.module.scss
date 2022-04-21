@@ -1,0 +1,49 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+@import 'src/pages/styles/svar';
+@import 'src/components/presentation/Header/svar';
+@import 'src/components/Layout/svar';
+
+.title {
+  text-align: center;
+}
+
+.titleText {
+  font-size: unit(24);
+  font-weight: var(--fw-semi-bold);
+
+  @include media-less($mobile-width) {
+    font-size: unit(16);
+  }
+}
+
+.mainLinkContainer {
+  text-align: center;
+  margin-top: unit(10);
+  @include flex-ch;
+}
+
+.description {
+  max-width: unit(250);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @include media-less($mobile-width) {
+    margin-top: unit(1);
+  }
+}
+
+.descriptionText {
+  font-size: unit(9);
+  line-height: 1.4;
+  font-weight: var(--fw-light);
+
+  @include media-less($tablet-width) {
+    font-size: unit(7);
+  }
+
+  @include media-less($mobile-width) {
+    font-size: unit(5);
+  }
+}

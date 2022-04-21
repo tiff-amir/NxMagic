@@ -1,0 +1,59 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+@import 'src/pages/styles/svar';
+@import 'src/components/Layout/svar';
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--th-overlay);
+  backdrop-filter: blur(#{unit(1.5)});
+  z-index: var(--z-modal);
+
+  @include flex-c;
+}
+
+.BaseModal {
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(106.93deg, var(--th-layout-bg-start) 2.92%, var(--th-layout-bg-end) 90.68%);
+  border-radius: unit(3);
+  width: calc(100% - 2 * #{unit($root-margin * 2)});
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: unit(0.5) solid var(--th-first);
+
+  @include media-less($mobile-width) {
+    width: calc(100% - #{unit($root-margin-mobile * 2)});
+  }
+}
+
+.title {
+  border-radius: unit(3) unit(3) 0 0;
+  @include padding-v(4);
+  @include padding-h(4);
+  @include truncated();
+  @include flex-c;
+}
+
+.titleText {
+  font-size: unit(6);
+  line-height: 1;
+  font-weight: var(--fw-semi-bold);
+}
+
+.content {
+  @include padding-h(4);
+  @include padding-v(4);
+  font-weight: var(--fw-light);
+}
+
+.buttons {
+  @include padding-v(4);
+  @include padding-h(4);
+  @include flex-c;
+}

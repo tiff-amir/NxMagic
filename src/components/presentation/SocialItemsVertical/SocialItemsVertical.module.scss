@@ -1,0 +1,17 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.SocialItemsVertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  @include size(12);
+  display: block;
+  margin-bottom: unit(3);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

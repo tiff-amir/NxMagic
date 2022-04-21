@@ -1,0 +1,30 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "@i18n": "./src/i18n/index.ts",
+        "@contracts": "./src/contracts",
+        "@_data": "./src/_data",
+        "src/assets/images": "./src/assets/images",
+        "src/types": "./src/types",
+        "@container": "./src/components/container",
+        "@presentation": "./src/components/presentation",
+        "@hooks": "./src/hooks",
+        "@common": "./src/components/_common",
+        "@api": "./src/api",
+        "@constants": "./src/constants",
+        "@context": "./src/context",
+        "@public": "./public",
+        "@utils": "./src/utils",
+        "@assets": "./src/assets",
+        "@ducks": "./src/ducks",
+        "@interfaces": "./src/interfaces",
+        "@workers": "./src/workers",
+        "appConfig.json": "./appConfig.json",
+        "featureConfig.json": "./featureConfig.json"
+      }
+    }]
+  ]
+}

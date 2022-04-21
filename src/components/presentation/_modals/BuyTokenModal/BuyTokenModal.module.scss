@@ -1,0 +1,23 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.BuyTokenModal {
+  max-width: unit(100);
+}
+
+.button {
+  width: unit(20);
+  margin-right: unit(3);
+}
+
+.button--last {
+  margin-right: 0;
+}
+
+.block {
+  margin-top: unit(3);
+}
+
+.content {
+  line-height: 1.4;
+}

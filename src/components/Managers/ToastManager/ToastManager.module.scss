@@ -1,0 +1,25 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+@import 'src/components/Layout/svar';
+
+.toast {
+  z-index: var(--z-toast);
+  background: var(--th-layout-bg-end);
+  color: var(--th-text);
+  border-radius: unit(3);
+  border: unit(0.5) solid var(--th-text);
+  box-sizing: border-box;
+
+  button {
+    opacity: 1;
+    color: var(--th-link);
+  }
+
+  @media only screen and (max-width: $unit * 120) {
+    & {
+      width: calc(100vw - #{unit(2 * $root-margin-mobile)});
+      left: unit($root-margin-mobile);
+      top: unit($root-margin-mobile);
+    }
+  }
+}

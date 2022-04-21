@@ -1,0 +1,82 @@
+{
+  "_errors": {
+    "noContract": "Contract not found, please check Binance Smart Chain is connected",
+    "noProvider": "MetaMask provider not found",
+    "unknown": "Something went wrong, please try again",
+    "timeout": "The operation was not performed due to timeout, please try again",
+    "address": "Incorrect address",
+    "emptyAddress": "Address cannot be empty"
+  },
+  "_common": {
+    "title": "NxMagic",
+    "description": "ERC-20 meme-token that allows increase amount x1000\uD83D\uDCC8\uD83D\uDCB0 or more \uD83E\uDD11",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "close": "Close",
+    "copy": "Copy",
+    "ok": "Ok",
+    "telegram": "Telegram",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "reddit": "Reddit",
+    "whitepaper": "Whitepaper",
+    "metamask": "MetaMask",
+    "walletConnect": "WalletConnect"
+  },
+  "Header": {
+    "buy": "Buy token",
+    "connect": "Connect",
+    "disconnect": "{{address}}…",
+    "comingSoon": "Coming soon…"
+  },
+  "NotFoundPage": {
+    "title": 404,
+    "description": "Page not found.",
+    "main": "Go to main page"
+  },
+  "RootPage": {
+    "title": ["Nx", "Magic"],
+    "description": [
+      "ERC-20 meme-token that allows increase amount ",
+      "x1000\uD83D\uDCC8\uD83D\uDCB0 ",
+      "or more as a ",
+      "delight to the eyes \uD83E\uDD11"
+    ],
+    "increase": [
+      "How many times do you want to ",
+      "increase ",
+      "your {{tokenName}} amount?"
+    ],
+    "increaseAmount": "Increase amount",
+    "connectWallet": "Connect wallet for increasing",
+    "decrease": "Reset increase",
+    "increasing": "Increasing...",
+    "increaseResult": [
+      "After increasing the amount would be",
+      "~{{value}} {{symbol}} \uD83D\uDCAA"
+    ],
+    "maximumIncreaseWarning": "Maximum increase for your balance is {{value}}",
+    "increased": "Increased"
+  },
+  "BuyTokenModal": {
+    "title": "Buy token",
+    "buy": "Buy",
+    "description": [
+      "On the current roadmap phase tokens are sold through the ",
+      "IDO launchpad."
+    ],
+    "details": ["Roadmap, Tokenomics, PancakeSwap listing date, and other details can be found in the ", "whitepaper."]
+  },
+  "DecreaseModal": {
+    "title": "Reset increase",
+    "decrease": "Reset",
+    "inputLabel": "Wallet address (your address by default)",
+    "decreaseFee": "Small fee would be taken ({{value}} {{symbol}}) on decreasing not own balance",
+    "myAddress": "My address",
+    "decreasing": "Resetting...",
+    "decreased": "Reset"
+  },
+  "ConnectWalletModal": {
+    "title": "Connect wallet"
+  }
+}

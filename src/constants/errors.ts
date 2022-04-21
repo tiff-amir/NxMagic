@@ -1,0 +1,9 @@
+export const NO_PROVIDER_ERROR = 'errNoProvider';
+export const NO_IMPLEMENTATION_ERROR = 'errNoImplementation';
+export const TYPE_ERROR = 'errType';
+export const PARAM_ERROR = 'errParam';
+export const MISMATCH_ERROR = 'errMismatch';
+export const NOT_FOUND_ERROR = 'errNotFound';
+export const CONTRACT_NOT_FOUND_ERROR = 'errContractNotFound';
+export const NETWORK_ERROR = 'errNetwork';
+export const TIMEOUT_ERROR = 'errTimeout';

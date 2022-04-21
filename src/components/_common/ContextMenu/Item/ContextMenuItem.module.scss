@@ -1,0 +1,23 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.ContextMenuItem {
+  height: unit(10);
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+  cursor: pointer;
+  @include flex-cv;
+  @include padding-h();
+
+  &:hover {
+    background: #eeeeee;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.ContextMenuItem--withIcon {
+  padding-left: 0;
+}

@@ -1,0 +1,79 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.Input {
+  position: relative;
+}
+
+.container {
+  @include flex-ch;
+  width: 100%;
+  position: relative;
+}
+
+.label {
+  font-size: unit(3.5);
+  line-height: unit(3.5);
+  margin-bottom: unit();
+  padding-left: unit(4);
+}
+
+.prepend {
+  @include flex-c;
+}
+
+.append {
+  @include flex-c;
+}
+
+.input {
+  @include padding-v(3.25);
+  @include padding-h(4);
+  font-size: unit(4);
+  line-height: unit(4);
+  font-weight: var(--fw-semi-bold);
+  border-radius: unit(2);
+  border: unit(0.25) solid var(--th-logo);
+  background: var(--th-text);
+  color: var(--th-logo);
+  flex: 1;
+  box-sizing: border-box;
+  min-width: 0;
+
+  &::placeholder {
+    color: var(--th-placeholder);
+  }
+}
+
+.input--error {
+  border-color: var(--th-danger);
+}
+
+.input--big {
+  @include padding-v(5);
+  font-size: unit(6);
+  line-height: unit(6);
+}
+
+.error, .success, .warning {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding-top: unit();
+  padding-left: unit(3.5);
+  font-size: unit(3);
+  line-height: unit(3);
+}
+
+.error {
+  color: var(--th-danger);
+}
+
+.success {
+  color: var(--th-success);
+}
+
+.warning {
+  color: var(--th-warning);
+}

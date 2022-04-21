@@ -1,0 +1,15 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.Icon {
+  line-height: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  @include icon-size();
+}
+
+.svg {
+  stroke: black;
+  width: var(--size-svg-icon);
+  height: var(--size-svg-icon);
+}

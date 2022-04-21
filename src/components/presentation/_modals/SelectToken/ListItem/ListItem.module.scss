@@ -1,0 +1,29 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.SelectTokenListItem {
+  height: unit(10);
+  overflow: hidden;
+}
+
+.button {
+  @include empty-button;
+  @include flex-cv;
+  @include padding-h(2);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background: #dadada;
+  }
+}
+
+.icon {
+  @include icon-size(8);
+}
+
+.name {
+  flex: 1;
+  text-align: right;
+}

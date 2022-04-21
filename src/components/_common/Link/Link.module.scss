@@ -1,0 +1,17 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.Link {
+  text-decoration: none;
+  color: var(--th-link-second);
+  cursor: pointer;
+  @include txt;
+
+  &:hover {
+    color: var(--th-link-second-lighter);
+  }
+
+  &:active {
+    color: var(--th-link-second-darker);
+  }
+}

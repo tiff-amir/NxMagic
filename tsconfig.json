@@ -1,0 +1,100 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": [
+      "es6",
+      "dom",
+      "es2017",
+      "dom.iterable",
+      "esnext",
+      "webworker"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "target": "es2017",
+    "baseUrl": ".",
+    "paths": {
+      "@i18n": [
+        "./src/i18n/index.ts"
+      ],
+      "src/assets/images/*": [
+        "./src/assets/images/*"
+      ],
+      "@contracts/*": [
+        "./src/contracts/*"
+      ],
+      "@_data/*": [
+        "./src/_data/*"
+      ],
+      "src/types/*": [
+        "./src/types/*"
+      ],
+      "@container/*": [
+        "./src/components/container/*"
+      ],
+      "@presentation/*": [
+        "./src/components/presentation/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@common/*": [
+        "./src/components/_common/*"
+      ],
+      "@api/*": [
+        "./src/api/*"
+      ],
+      "@constants/*": [
+        "./src/constants/*"
+      ],
+      "@context/*": [
+        "./src/context/*"
+      ],
+      "@public/*": [
+        "public/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@ducks/*": [
+        "./src/ducks/*"
+      ],
+      "@interfaces/*": [
+        "./src/interfaces/*"
+      ],
+      "@workers/*": [
+        "./src/workers/*"
+      ],
+      "appConfig.json": [
+        "./appConfig.json"
+      ],
+      "featureConfig.json": [
+        "./featureConfig.json"
+      ]
+    },
+    "incremental": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts",
+    "next.config.js"
+  ]
+}

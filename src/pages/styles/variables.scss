@@ -1,0 +1,24 @@
+@import './svar';
+
+:root {
+  --unit: #{$unit};
+
+  --size-svg-icon: calc(var(--unit) * 6);
+  --max-content-width: calc(var(--unit) * 32000);
+
+  --width: 0px;
+  --height: 0px;
+
+  --z-modal: 400;
+  --z-state: 200;
+  --z-toast: 300;
+  --z-context-menu: 500;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --transparent: rgba(0, 0, 0, 0);
+}

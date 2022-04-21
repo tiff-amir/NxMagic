@@ -1,0 +1,15 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.DecreaseModal {
+  max-width: unit(100);
+}
+
+.button {
+  width: unit(40);
+  margin-right: unit(3);
+}
+
+.button--last {
+  margin-right: 0;
+}

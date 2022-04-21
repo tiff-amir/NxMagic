@@ -1,0 +1,203 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+@import 'src/pages/styles/svar';
+@import 'src/components/presentation/Header/svar';
+@import 'src/components/Layout/svar';
+
+$max-width: 137.5;
+
+.title {
+  text-align: center;
+  max-width: unit($max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titleTextMain, .titleTextRegular {
+  font-family: 'Original Surfer';
+  font-size: unit(31);
+  font-weight: var(--fw-regular);
+
+  @include media-less($mobile-width) {
+    font-size: unit(16);
+  }
+}
+
+.titleTextRegular {
+  color: var(--th-link-second);
+}
+
+.titleTextMain {
+  color: var(--th-logo);
+}
+
+.contract {
+  max-width: unit($max-width);
+  margin-top: unit(10);
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--th-main-text);
+  @include truncated();
+
+  @include media-less($mobile-width) {
+    margin-top: unit(3);
+  }
+}
+
+.contractLink {
+  color: var(--th-main-text);
+}
+
+.description {
+  max-width: unit($max-width);
+  margin-top: unit(6);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-less($mobile-width) {
+    margin-top: unit(3);
+  }
+}
+
+.descriptionRegular, .descriptionMain {
+  color: var(--th-main-text);
+  line-height: 1.4;
+}
+
+.descriptionRegular {
+  font-weight: var(--fw-light);
+}
+
+.descriptionMain {
+  font-weight: var(--fw-semi-bold);
+}
+
+.increase {
+  margin-top: unit(13);
+  max-width: unit($max-width);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-less($mobile-width) {
+    margin-top: unit(12);
+  }
+}
+
+.increaseTitle {
+  font-size: unit(8);
+  line-height: 1.2;
+  font-weight: var(--fw-medium);
+
+  @include media-less($mobile-width) {
+    font-size: unit(5);
+  }
+}
+
+.increaseTitleRegular {
+}
+
+.increaseTitleMain {
+  color: var(--th-logo);
+}
+
+.increaseInput {
+  margin-top: unit(8);
+  margin-left: auto;
+  margin-right: auto;
+
+  input {
+    text-align: center;
+  }
+
+  @include media-less($mobile-width) {
+    margin-top: unit(3);
+  }
+}
+
+.controls {
+  margin-top: unit(8);
+  @include flex-c;
+
+  @include media-less($mobile-width) {
+    display: block;
+  }
+}
+
+.button {
+  flex: 1;
+  max-width: unit(72);
+
+  @include media-less($mobile-width) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.space {
+  width: unit(2);
+
+  @include media-less($mobile-width) {
+    display: none;
+  }
+}
+
+.increaseButton {
+  @include media-less($mobile-width) {
+    margin-left: 0;
+    margin-top: unit(3);
+  }
+}
+
+.increaseResult {
+  margin-top: unit(8.5);
+  text-align: center;
+
+  @include media-less($mobile-width) {
+    margin-top: unit(3);
+  }
+}
+
+.increaseResultRegular, .increaseResultMain {
+  font-size: unit(4.5);
+  line-height: 1.4;
+}
+
+.increaseResultRegular {
+  color: var(--th-main-text);
+  font-weight: var(--fw-regular);
+}
+
+.increaseResultMain {
+  font-weight: var(--fw-bold);
+}
+
+.footer {
+  position: absolute;
+  bottom: unit($footer-bottom-margin);
+  left: 0;
+  right: 0;
+  @include flex-ch;
+}
+
+.footerButton {
+  @include flex-c;
+  @include size($footer-icon-height);
+  flex-direction: column;
+  margin-right: unit(2);
+  background: transparent;
+  border-color: transparent;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.footerIcon {
+  @include icon-size(10, 10);
+}
+
+.footerText {
+  font-size: unit(3);
+  line-height: unit(3);
+  font-weight: var(--fw-light);
+}

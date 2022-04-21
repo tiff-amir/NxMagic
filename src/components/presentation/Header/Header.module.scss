@@ -1,0 +1,50 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+@import 'src/pages/styles/svar';
+@import './svar';
+
+.Header {
+  height: unit($header-height);
+  padding-top: unit(15);
+  @include padding-h(15);
+
+  @include media-less($mobile-width) {
+    height: unit($small-header-height);
+    padding-top: 0;
+    @include flex-c;
+    @include padding-h(6);
+  }
+}
+
+.Header--small {
+  padding-top: 0;
+  height: unit($small-header-height);
+  @include flex-c;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonContainer {
+  @include flex-cv;
+  margin-right: unit(2);
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @include media-less($mobile-width) {
+    margin-right: unit(2);
+  }
+}
+
+.button {
+  min-width: unit(46);
+
+  @include media-less($mobile-width) {
+    min-width: auto;
+  }
+}

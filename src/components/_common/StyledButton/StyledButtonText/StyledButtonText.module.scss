@@ -1,0 +1,45 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.StyledButtonText {
+  border-width: unit(0.5);
+  border-style: solid;
+  border-color: var(--transparent);
+  background: var(--transparent);
+}
+
+.StyledButtonText--main,
+.StyledButtonText--regular,
+.StyledButtonText--secondary,
+.StyledButtonText--danger {
+  color: var(--th-text);
+  background: var(--th-second);
+  border-color: var(--th-second);
+
+  svg {
+    fill: var(--th-link);
+    stroke: var(--th-link);
+  }
+
+  &:hover {
+    color: var(--th-link-lighter);
+
+    svg {
+      fill: var(--th-link-lighter);
+      stroke: var(--th-link-lighter);
+    }
+  }
+
+  &:active {
+    color: var(--th-link-darker);
+
+    svg {
+      fill: var(--th-link-darker);
+      stroke: var(--th-link-darker);
+    }
+  }
+}
+
+.StyledButtonText--disabled {
+  opacity: 0.4;
+}

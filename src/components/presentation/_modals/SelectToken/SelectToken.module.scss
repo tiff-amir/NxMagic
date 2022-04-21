@@ -1,0 +1,17 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.modal {
+  max-height: 100%;
+}
+
+.SelectToken {
+  display: flex;
+  flex-direction: column;
+  min-height: unit(80);
+  overflow: hidden;
+}
+
+.list {
+  flex: 1;
+}

@@ -1,0 +1,12 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.Loader {
+  @include flex-c;
+  @include loader-size();
+  line-height: 0;
+
+  > span {
+    border-color: var(--th-loader);
+  }
+}

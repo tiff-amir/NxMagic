@@ -1,0 +1,45 @@
+{
+  "rootToken": {
+    "symbol": "BNB"
+  },
+  "token": {
+    "address": "0x6c23702e705451afa20e4aa660e225fa5c4ea713",
+    "decreaseFee": 0.01,
+    "maxLockedAmount": 1000000000000,
+    "totalSupply": "1000000000000000000000",
+    "decimals": 18,
+    "name": "NxMagic",
+    "symbol": "NXMA",
+    "links": {
+      "buyLink": "",
+      "contractLink": "https://bscscan.com/address/0x6c23702e705451afa20e4aa660e225fa5c4ea713"
+    },
+    "tokenomics": {
+      "increaseReserve": "999999999000000000",
+      "liquidity": "700000000",
+      "team": "50000000",
+      "marketing": "250000000"
+    }
+  },
+  "webApp": {
+    "name": "NxMagic",
+    "rootAbiPath": "/_next/static/abis",
+    "localeInfoPath": "/_next/static/chunks/locale-info.json",
+    "localePathPattern": "/_next/static/chunks/locale-{{name}}.json",
+    "network": {
+      "transaction": "https://bscscan.com/tx/[key]",
+      "chainId": 56,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "infuraId": "fd97dcf3fccc868cdf2fea0cbe361822"
+    },
+    "links": {
+      "ido": "",
+      "telegram": "https://t.me/+rAz0MyoArBc5NWMy",
+      "github": "https://github.com/tiff-amir/NxMagic",
+      "twitter": "https://twitter.com/RasuOlva",
+      "reddit": "https://www.reddit.com/r/NxMagic",
+      "whitepaper": "/_next/static/whitepaper.pdf",
+      "logo": "https://nxmagic.space/_next/static/logo-1200x630.png"
+    }
+  }
+}

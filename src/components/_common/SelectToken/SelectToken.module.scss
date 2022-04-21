@@ -1,0 +1,20 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.SelectToken {
+  @include empty-button;
+  @include flex-cv;
+  cursor: pointer;
+}
+
+.emptyText {
+
+}
+
+.icon {
+  @include icon-size(8);
+}
+
+.arrow {
+  @include icon-size(6, 4);
+}

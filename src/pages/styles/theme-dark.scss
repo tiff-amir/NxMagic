@@ -1,0 +1,36 @@
+:root {
+  --th-dark-overlay: rgba(0, 0, 0, 0.7);
+  --th-dark-root-bg: #1362FB;
+  --th-dark-layout-bg-start: #0C0924;
+  --th-dark-layout-bg-end: #1A1A3D;
+
+  --th-dark-success: #138B00;
+  --th-dark-warning: #FFD919;
+  --th-dark-danger: #DE0000;
+  --th-dark-placeholder: #828080;
+  --th-dark-text: #FFFFFF;
+  --th-dark-text-darker: #{darken(#FFFFFF, 10)};
+
+  --th-dark-link: #B0CAFF;
+  --th-dark-link-lighter: #{lighten(#B0CAFF, 4)};
+  --th-dark-link-darker: #{darken(#B0CAFF, 10)};
+
+  --th-dark-logo: #2CC3EB;
+
+  --th-dark-link-second: #2CBBB4;
+  --th-dark-link-second-lighter: #{lighten(#2CBBB4, 4)};
+  --th-dark-link-second-darker: #{darken(#2CBBB4, 10)};
+
+  --th-dark-first: #725AEC;
+  --th-dark-first-lighter: #{lighten(#725AEC, 2)};
+  --th-dark-first-darker: #5D4BB9;
+  --th-dark-second: #292952;
+  --th-dark-second-lighter: #{lighten(#292952, 2)};
+  --th-dark-second-darker: #{darken(#292952, 6)};
+  --th-dark-second-opacity: rgba(41, 41, 82, 0.4);
+  --th-dark-third: #333351;
+  --th-dark-third-lighter: #{lighten(#333351, 2)};
+  --th-dark-third-darker: #{darken(#333351, 6)};
+
+  --th-dark-main-text: #817DAC;
+}

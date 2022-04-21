@@ -1,0 +1,68 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+@import 'src/pages/styles/svar';
+
+
+.TextButton {
+  @include padding-h(6);
+  @include flex-c;
+  @include txt;
+  height: unit(10.5);
+  border-radius: unit(2);
+
+  @include media-less($mobile-width) {
+    @include padding-h(3);
+  }
+}
+
+.TextButton--big {
+  height: unit(14);
+}
+
+.icon {
+  @include icon-size(6, 6);
+  margin-right: unit(3);
+}
+
+.icon--close {
+  margin-left: unit(3);
+  margin-right: 0;
+}
+
+.TextButton--text {
+
+}
+
+.TextButton--link {
+  @include padding-v(0);
+  @include padding-h(0);
+  min-width: 0;
+  border-radius: 0;
+  border-width: 0;
+  border-style: none;
+
+  color: var(--th-btn-text-link);
+
+  svg {
+    fill: var(--th-btn-text-link);
+    stroke: var(--th-btn-text-link);
+  }
+
+  &:hover {
+    color: var(--th-btn-text-link-hover);
+
+    svg {
+      fill: var(--th-btn-text-link-hover);
+      stroke: var(--th-btn-text-link-hover);
+    }
+  }
+
+  &:active {
+    color: var(--th-btn-text-link-active);
+
+    svg {
+      fill: var(--th-btn-text-link-active);
+      stroke: var(--th-btn-text-link-active);
+    }
+  }
+}

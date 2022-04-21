@@ -1,0 +1,103 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+@import 'src/components/presentation/Header/svar';
+@import './svar';
+
+.Layout {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(113.2deg, var(--th-dark-layout-bg-start) 4.49%, var(--th-dark-layout-bg-end) 97.07%);
+  margin: unit($root-margin);
+  width: calc(100% - #{unit($root-margin * 2)});
+  height: calc(100% - #{unit($root-margin * 2)});
+  overflow: hidden;
+  color: var(--th-text);
+
+  @include media-less($mobile-width) {
+    margin: unit($root-margin-mobile);
+    width: calc(100% - #{unit($root-margin-mobile * 2)});
+    height: calc(100% - #{unit($root-margin-mobile * 2)});
+  }
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  padding-top: unit($header-margin + $header-height);
+  width: 100%;
+  height: 100%;
+  @include overflow-h(hidden);
+  @include overflow-v(auto);
+
+  @include media-less($mobile-width) {
+    padding-top: unit($header-margin + $small-header-height);
+  }
+}
+
+.headerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw - #{unit($root-margin * 2)});
+
+  @include media-less($mobile-width) {
+    width: calc(100vw - #{unit($root-margin-mobile * 2)});
+  }
+}
+
+.header {
+  max-width: var(--max-content-width);
+  margin: unit($header-margin) auto 0 auto;
+}
+
+.stickyHeaderContainer {
+  position: absolute;
+  top: unit(-1 * $small-header-height);
+  left: 0;
+  right: 0;
+  height: unit($small-header-height);
+  background: var(--th-layout-bg-end);
+  transform: translateY(0);
+  z-index: 3;
+  transition: transform 0.2s ease;
+}
+
+.stickyHeaderContainer--visible {
+  transform: translateY(100%);
+}
+
+.stickyHeader {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: var(--max-content-width);
+  box-sizing: border-box;
+}
+
+.mainContent {
+
+}
+
+.mainContent--full {
+  height: calc(100vh - #{unit($header-margin + $header-height)} - #{unit($root-margin * 2)});
+  overflow: hidden;
+
+  @include media-less($mobile-width) {
+    height: calc(100vh - #{unit($header-margin + $small-header-height)} - #{unit($root-margin-mobile * 2)});
+  }
+}
+
+.svg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  display: none;
+}

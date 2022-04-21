@@ -1,0 +1,31 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.SocialItemsHorizontal {
+  @include flex-cv;
+  height: unit(25);
+}
+
+.linkContainer {
+  @include size(25);
+  @include flex-c;
+  flex-direction: column;
+  margin-right: unit(4);
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.link {
+  @include flex-c;
+  flex-direction: column;
+}
+
+.icon {
+  @include icon-size(10, 10)
+}
+
+.label {
+  @include small-txt;
+}

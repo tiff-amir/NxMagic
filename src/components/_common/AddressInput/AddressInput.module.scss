@@ -1,0 +1,49 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.AddressInput {
+  position: relative;
+}
+
+.symbol {
+  @include padding-h(2);
+  @include flex-c;
+  height: 100%;
+  min-width: unit(10);
+  background: #c5c5c5;
+}
+
+.autoCompleteList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #7f7f7f;
+  background: white;
+  z-index: var(--z-context-menu);
+  max-height: unit(75);
+
+  @include empty-list;
+  @include overflow-v();
+}
+
+li.autoCompleteList__item {
+  cursor: pointer;
+  @include flex-cv;
+  @include padding-v(1);
+  @include padding-h(2);
+
+  &:hover {
+    background: #e7e7e7;
+  }
+}
+
+.autoCompleteList__itemSymbol {
+  font-weight: 700;
+  margin-left: unit();
+}
+
+.autoCompleteList__itemName {
+  opacity: 0.7;
+  margin-left: unit();
+}

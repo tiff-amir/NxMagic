@@ -1,0 +1,43 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.StyledButtonOutline {
+  border-width: unit(0.25);
+  border-style: solid;
+}
+
+.StyledButtonOutline--main,
+.StyledButtonOutline--regular,
+.StyledButtonOutline--secondary,
+.StyledButtonOutline--danger {
+  background: var(--th-second);
+  color: var(--th-text);
+  border-color: var(--th-first);
+
+  svg {
+    fill: var(--th-text);
+    stroke: var(--th-text);
+  }
+
+  &:hover {
+    background: var(--th-second-lighter);
+
+    svg {
+      fill: var(--th-link-lighter);
+      stroke: var(--th-link-lighter);
+    }
+  }
+
+  &:active {
+    background: var(--th-second-darker);
+
+    svg {
+      fill: var(--th-link-darker);
+      stroke: var(--th-link-darker);
+    }
+  }
+}
+
+.StyledButtonOutline--disabled {
+  opacity: 0.4;
+}

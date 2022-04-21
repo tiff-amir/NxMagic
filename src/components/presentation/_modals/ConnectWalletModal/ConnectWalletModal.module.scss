@@ -1,0 +1,19 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+.ConnectWalletModal {
+  max-width: unit(100);
+}
+
+.buttons {
+  @include flex-c;
+  flex-direction: column;
+}
+
+.button {
+  width: unit(45);
+
+  &:last-of-type {
+    margin-top: unit(3);
+  }
+}

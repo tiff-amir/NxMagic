@@ -1,0 +1,27 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+@import 'src/pages/styles/svar';
+@import 'src/components/presentation/Header/svar';
+@import 'src/components/Layout/svar';
+
+.PageWrapper {
+  --container-vertical-offsets: #{$header-height + $header-margin + $root-margin * 2};
+  --container-height: calc(100vh - #{unit(--container-vertical-offsets)});
+  box-sizing: border-box;
+  min-height: var(--container-height);
+  padding-top: unit(4);
+  position: relative;
+  padding-bottom: unit($footer-top-margin + $footer-bottom-margin + $footer-icon-height);
+  @include padding-h(12);
+
+  @include media-less($tablet-width) {
+    padding-top: unit(8);
+  }
+
+  @include media-less($mobile-width) {
+    @include padding-h(6);
+    padding-top: unit(6);
+    --container-vertical-offsets: #{$small-header-height + $header-margin + $root-margin-mobile * 2};
+    --container-height: calc(100vh - #{unit(--container-vertical-offsets)});
+  }
+}

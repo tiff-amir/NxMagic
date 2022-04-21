@@ -1,0 +1,41 @@
+@import 'src/pages/styles/functions';
+@import 'src/pages/styles/mixins';
+
+body, html, #__next {
+  height: 100%;
+  background: var(--th-root-bg);
+}
+
+body {
+  font-size: unit(4);
+  line-height: 1.2;
+  font-weight: var(--fw-regular);
+  color: var(--th-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: unit(0.5);
+  position: relative;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--th-link-second);
+  border-radius: unit(0.5) 0 0 unit(0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--th-link-second);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
