@@ -11,7 +11,7 @@
     "name": "NxMagic",
     "symbol": "NXMA",
     "links": {
-      "buyLink": "",
+      "buyLink": "https://pancakeswap.finance/swap?outputCurrency=0x6c23702e705451afa20e4aa660e225fa5c4ea713",
       "contractLink": "https://bscscan.com/address/0x6c23702e705451afa20e4aa660e225fa5c4ea713"
     },
     "tokenomics": {
