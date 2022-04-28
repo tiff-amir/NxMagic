@@ -46,6 +46,7 @@ module.exports = {
         { from: './node_modules/inobounce/inobounce.min.js', to: './static/chunks/inobounce.js' },
         { from: './solidity/abis', to: './static/abis' },
         { from: './src/_data/whitepaper.pdf', to: './static/whitepaper.pdf' },
+        { from: './src/_data/logo-200x200.png', to: './static/logo-200x200.png' },
         { from: './src/_data/logo-512x512.png', to: './static/logo-512x512.png' },
         { from: './src/_data/logo-640x320.png', to: './static/logo-640x320.png' },
         { from: './src/_data/logo-1200x630.png', to: './static/logo-1200x630.png' },
